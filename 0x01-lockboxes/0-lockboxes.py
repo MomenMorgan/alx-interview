@@ -2,7 +2,12 @@
 """Lockboxes."""
 
 def canUnlockAll(boxes):
-        """Determine if all the boxes can be opened."""
+        """Check if all boxes can be opened
+        Args:
+                boxes (list): List which contain all the boxes with the keys
+        Returns:
+                bool: True if all boxes can be opened, otherwise, False
+        """
         if not boxes:
                 return False
         if len(boxes) == 1:
